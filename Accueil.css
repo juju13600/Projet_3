@@ -1,0 +1,157 @@
+html, body 
+{
+    margin:0;
+    padding:0;
+}
+body 
+{
+    max-width: 800px;
+}
+*
+{
+    font-family: 'Roboto';
+}
+h1
+{
+    font-weight:bold;
+    font-size: 20px;
+}
+h2
+{
+    font-size: 14px;
+    font-weight: 300;
+}
+h3
+{
+    font-family: 'Shrikhand';
+}
+.logo
+{
+    box-shadow: 0px 0px 10px 0px grey;
+}
+
+.logo img
+{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.recherche
+{
+    width: 100%;
+    height: 50px;
+    background-color: #d6d4d4;
+    text-align: center;
+    border: white;
+    color: black;
+    margin-top: 3px;
+}
+input::placeholder
+{
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.Présentation
+{
+    background-color: #F2F2F2;
+    height: 270px;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 7%;
+    text-align: center;
+}
+.bouton-présentation
+{
+    color: white;
+    width: 80%;
+    background-color: #FF79DA;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 3px;
+    border: white;
+    margin-top: 20PX;
+    margin-bottom: 10px;
+}
+.Fonctionnement
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.bouton
+{
+    color: black;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow:  3px 3px 3px 3px #e0e0e0;
+    border: white;
+    margin-bottom: 20px;
+
+}
+.Restaurant
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 100%;
+    padding-left: 3%;
+}
+.carte-Restaurant
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    width: 97%;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+.cadre-photo-Restaurant
+{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    height: 400px;
+    width: 95%;
+}
+.card-image img
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    height: 300px;
+    object-position: bottom;
+}
+.card-body
+{
+    padding-left: 3%;
+}
+.charonne img
+{
+    object-position: 10% 2%;
+}
+a,a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+footer
+{
+    background-color: rgb(36, 35, 35);
+    color: white;
+    font-family: 'Roboto';
+    PADDING-left: 3%;
+}
