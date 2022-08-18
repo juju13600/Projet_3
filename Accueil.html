@@ -2,80 +2,96 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0,  initial-scale=1.0">
   <link rel="stylesheet" href="file:///C:/Users/justi/Documents/Projet3/Accueil.css"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Shrikhand&display=swap');
-
-    </style>
+  </style>
+  <script src="https://kit.fontawesome.com/0c1e2b2898.js" crossorigin="anonymous"></script>
   <title>Oh my food</title>
 </head>
+
 <body>
+
 <header>
-<div class= logo><img src=file:///C:/Users/justi/Documents/Projet3/images/logo/ohmyfood.png alt="logo"></div>
-<form method="post" action="#" >
-  <label for="votre-recherche"><input type="search" name="votre-recherche" id="votre-recherche" placeholder="Paris, Belleville" style="color: black;" class="recherche"/>
+  <div class= logo><img src=file:///C:/Users/justi/Documents/Projet3/images/logo/ohmyfood.png alt="logo"></div>
+  <form method="post" action="#" ><i class="fa-solid fa-location-dot" style= "color:rgb(77, 77, 77);"></i>
+    <label for="votre-recherche"><input type="search" name="votre-recherche" id="votre-recherche" placeholder="Paris, Belleville " style="color: black;" class="recherche" />
   </form>
 </header>
 <section>
-<div class="Présentation">
+  <div class="Présentation">
     <h1>Réservez le menu qui vous convient</h1>
     <h2>Découvrez les restaurants d'exception, sélectionnés par nos soins.</h2>
-    <input type="submit" value="Explorer nos restaurants" class= "bouton-présentation" />
-</div>
-<div class="Fonctionnement">
+    <input type="submit" value="Explorer nos restaurants" class= "btn bouton-présentation" />
+  </div>
+
+  <div class="Fonctionnement">
     <h1>Fonctionnement</h1>
-    <input type="submit" value="Choisissez un restaurant" class= "bouton" />
-    <input type="submit" value="Composez votre menu" class= "bouton" />
-    <input type="submit" value="Dégustez au restaurant" class= "bouton" />
-</div>
-<div class="Restaurant"> <h1>Restaurant</h1>
-<div class="carte-Restaurant">
+    <div class= "filtre"><i class="fa-solid fa-mobile-screen-button"></i><input type="submit" value="Choisissez un restaurant" class= "btn bouton" /></div>
+    <div class= "filtre"><input type="submit" value="Composez votre menu" class= "btn bouton" /></div>
+    <div class= "filtre"><input type="submit" value="Dégustez au restaurant" class= "btn bouton" /></div>
+  </div>
+  <div class="Restaurant"> <h1>Restaurant</h1>
+    <div class="carte-Restaurant">
+      <div class="cadre-photo-Restaurant">
+        <a href="file:///C:/Users/justi/Documents/Projet3/Lesensdugout.html">
+        <div class="card-image"><img src=file:///C:/Users/justi/Documents/Projet3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg ></div>
+        <div class="card-body">
+          <div class="card-text">
+          <div class="card-title"><h1>La palette du goût</h1></div>
+          <div class="card-excerpt"><p>Ménilmontant</p></div></div>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+        </a>
+      </div>
     <div class="cadre-photo-Restaurant">
-    <a href="#">
-    <div class="card-image"><img src=file:///C:/Users/justi/Documents/Projet3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg ></div>
-    <div class="card-body">
-    <div class="card-title"><h1>La palette du goût</h1></div>
-    <div class="card-excerpt"><p>Ménilmontant</p></div>
-    </div>
-    </a>
-    </div>
-    <div class="cadre-photo-Restaurant">
-    <a href="#">
+    <a href="file:///C:/Users/justi/Documents/Projet3/Lanoteenchant%C3%A9e.html">
     <div class="card-image"><img src=file:///C:/Users/justi/Documents/Projet3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg alt="charonne"></div>
     <div class="card-body">
+    <div class="card-text">
     <div class="card-title"><h1>La note enchantée</h1></div>
-    <div class="card-excerpt"><p>Charonne</p></div>
+    <div class="card-excerpt"><p>Charonne</p></div></div>
+    <i class="fa-regular fa-heart fa-lg"></i>
+    
     </div>
     </a>
     </div>
     <div class="cadre-photo-Restaurant">
-    <a href="#">
+    <a href="file:///C:/Users/justi/Documents/Projet3/Alafrançaise.html">
     <div class="card-image"><img src=file:///C:/Users/justi/Documents/Projet3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg></div>
     <div class="card-body">
+      <div class="card-text">
     <div class="card-title"><h1>A la française</h1></div>
-    <div class="card-excerpt"><p>Cité Rouge</p></div>
+    <div class="card-excerpt"><p>Cité Rouge</p></div></div>
+    <i class="fa-regular fa-heart fa-lg"></i>
     </div>
     </a>
     </div>
     <div class="cadre-photo-Restaurant">
-    <a href="#">
+    <a href="file:///C:/Users/justi/Documents/Projet3/Led%C3%A9licedessens.html">
     <div class="card-image"><img src=file:///C:/Users/justi/Documents/Projet3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg ></div>
     <div class="card-body">
+      <div class="card-text">
     <div class="card-title"><h1>Le délice des sens</h1></div>
-    <div class="card-excerpt"><p>Folie Méricourt</p></div>
+    <div class="card-excerpt"><p>Folie Méricourt</p></div></div>
+    <i class="fa-regular fa-heart fa-lg"></i>
     </div>
     </a>
     </div>
-</div>
-</div>
+    </div>
+  </div>
 </section>
 <footer>
-<h3>ohmyfood</h3>
-<h2>Proposer un restaurant<h2>
-<h2>Devenir partenaire<h2>
-<h2>Mentions légales<h2>
-<h2>Contact<h2>
+  <h3>ohmyfood</h3>
+  <ul>
+    <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+    <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+    <li>Mentions légales</li>
+    <li>Contact</li>   
+  </ul>
+</footer>
 </body>
 </html>
