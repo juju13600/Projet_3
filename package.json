@@ -1,0 +1,19 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/Accueil.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juju13600/Projet_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juju13600/Projet_3/issues"
+  },
+  "homepage": "https://github.com/juju13600/Projet_3#readme"
+}
