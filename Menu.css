@@ -33,12 +33,19 @@ h4
 h5
 {
     display: flex;
-    text-decoration: underline #99E2D0 2px;
-    text-underline-offset: 10px;
+    
     font-weight: 50;
     font-size: 16px;
 }
 
+.titre {
+
+    border-bottom: #99E2D0 2px solid;
+    border-width: 2px;
+    width: 45px;
+    height :50px;
+    margin-bottom: 15px;
+}
 .logo img
 {
     width: 40%;
