@@ -8,3 +8,330 @@ html, body
     font-family: 'Roboto';
     font-size: 12px;
 }
+h1
+{
+    font-family: 'Shrikhand';
+    font-weight: 100;
+    font-size: 22px;
+}
+h2
+{  
+    font-size: 14px;
+    font-weight: 900;
+}
+h3
+{
+    font-family: 'Shrikhand';
+    font-weight: 100;
+}
+h4
+{
+    font-size: 14px;
+    font-weight: 100;
+    width: 100%;
+}
+h5
+{
+    display: flex;
+    
+    font-weight: 50;
+    font-size: 16px;
+}
+
+.titre {
+
+    border-bottom: #99E2D0 2px solid;
+    border-width: 2px;
+    width: 45px;
+    height :30px;
+    margin-bottom: 15px;
+}
+.logo img
+{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.New
+{
+    display: flex;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 65px;
+    height: 20px;
+    border-radius: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+}
+.backgroundpalette
+{
+background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.backgroundnote
+{
+background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) ;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 0PX -100px; }
+.backgroundfrancaise
+{
+background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) ;
+background-size: contain;
+background-repeat: no-repeat;
+}.backgrounddelice
+{
+background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) ;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.Menu-général
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 30px 30px 0px 0px;
+    height: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 56%;
+}
+
+.fa-heart
+{
+   padding-left: 70%;
+}
+img
+{
+width: 100%;}
+.carte
+{
+    display: flex;
+flex-direction: column;
+}
+.menu 
+{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    margin-bottom: 20px;
+    height: 60px;
+    border-radius: 10px 10px 10px 10px;
+    line-height:    10px;
+    overflow: hidden;
+    width: 100%;
+    }
+.entrées
+{
+    transform : scale(1);
+    animation-name: chargement ;
+    animation-duration: 5s;
+
+}
+    @keyframes chargement {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+.plats
+{
+transform : scale(1);
+animation-name: chargement ;
+animation-duration: 7s;
+
+}
+@keyframes chargement {
+0% {
+opacity: 0;
+}
+100% {
+opacity:1;
+} 
+}  
+.desserts
+{transform : scale(1);
+animation-name: chargement ;
+animation-duration: 9s;
+
+}
+@keyframes chargement {
+0% {
+opacity: 0;
+}
+100% {
+opacity:1;
+}
+} 
+
+.card-body
+{
+    width: 97%;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+.prix
+{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.check{
+    color: white;
+    background-color: aquamarine;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 13%;
+    padding-left: 1%;
+    padding-top: 20px;
+    margin-right:-1000px;
+}
+
+.menu:hover .check{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.menu:hover .check i
+{
+    animation: rotate;
+    animation-duration: 2s;
+  }
+
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.btn
+{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: white;
+}
+.fa-circle-check i
+{
+ padding-top: 40%;
+}
+
+.link,.link:visited
+{
+    text-decoration: none;
+    color: black;
+}
+.btn
+{
+    color: white;
+    width: 45%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    background: linear-gradient( to bottom right, #FF79DA,#9356DC);
+    border-radius: 40px;
+    box-shadow:  3px 3px 3px 3px #e0e0e0;
+    border: white;
+    padding-left: 18%;
+}
+
+footer
+{
+    background-color: rgb(48, 46, 46);
+    color: white;
+    padding-left: 3%;
+    padding-top: 5px;
+    height: 180px;
+    }
+
+ul 
+{
+    padding: 0;
+}
+
+li 
+{
+    list-style: none;
+    padding-bottom: 8px;
+    font-family: 'Roboto';
+}
+.foot {
+    list-style: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.foot_link
+{
+    text-decoration: none;
+    color: white;
+}
+.fa-utensils
+{
+    padding-right: 5px;
+}
+.fa-handshake-angle
+{
+    padding-right: 1px;
+}
+@media screen and (max-width: 850px){
+.fa-heart
+{
+   padding-left: 30%;
+}
+.card-body
+{
+    width: 93%;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+.check{
+    color: white;
+    background-color: aquamarine;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 13%;
+    padding-top: 6%;
+    padding-left: 1%;
+    margin-right:-1000px;
+}
+.fa-circle-check 
+{
+    padding: 10px;
+}
+.prix
+{
+    display: flex;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.btn
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: white;
+    padding-left: 12%;
+}
+}

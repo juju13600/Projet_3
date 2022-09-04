@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0,  initial-scale=1.0">
-  <link rel="stylesheet" href="file:///C:/Users/justi/Documents/Projet3/Menu.css"/>
+  <link rel="stylesheet" href="file:///C:/Users/justi/Documents/Projet3/sass/Menu.css"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
@@ -17,62 +17,68 @@
 <body>
 
 <header>
-  <div class= logo><img src=file:///C:/Users/justi/Documents/Projet3/images/logo/ohmyfood.png alt="logo"></div>
+  <div class= logo><div class= "New"><a class="link" href="Accueil.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a></div><img src=file:///C:/Users/justi/Documents/Projet3/images/logo/ohmyfood.png alt="logo"></div>
 </header>
 
 <section>
   <div class="backgroundpalette">
     <div class= "Menu-général"><h1>La palette du goût <i class="fa-regular fa-heart fa-1x"></i></h1>
       <div class="carte">
+        <div class="entrées">
         <div class="titre"><h5>ENTREES</h5></div>
         <div class= "menu">
           <div class="card-body"><h2>Fricassée d'escargot</h2>
           Au piment d'Espelette </div>
-          <div class="prix">25€</div>
+          <div class="prix">25€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
         <div class= "menu">
           <div class="card-body"><h2>Foie gras de canard mi-cuit</h2>
           Et ses copeaux de truffe noire</div>
-          <div class="prix">35€</div>
+          <div class="prix">35€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
         <div class= "menu">
           <div class="card-body"><h2>Oeuf au plat</h2>
           Assaisonné à la truffe sur lit de caviar</div>
-          <div class="prix">20€</div>
+          <div class="prix">20€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
+        </div>
+      <div class="plats">
       <div class="titre"><h5>PLATS</h5></div>
         <div class= "menu">
           <div class="card-body"><h2>Filet de boeuf aux herbes</h2>
           Accompagné de sa ribambelle de légumes</div>
-          <div class="prix">40€</div>
+          <div class="prix">40€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
         <div class= "menu">
           <div class="card-body"><h2>Parmentier de queue de boeuf</h2>
           À la truffe noire sur sa purée de panais</div>
-          <div class="prix">35€</div>
+          <div class="prix">35€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
         <div class= "menu">
           <div class="card-body"><h2>Filet de turbot</h2>
             Aux agrumes</div>
-          <div class="prix">44€</div>
+          <div class="prix">44€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
+        </div>
+        <div class="desserts">
         <div class="titre"><h5>DESSERTS</h5></div>
         <div class= "menu">
           <div class="card-body"><h2>Paris-Brest</h2>
           Revisité</div>
-          <div class="prix">18€</div>
+          <div class="prix">18€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
         <div class= "menu">
           <div class="card-body"><h2>Macaron au chocolat d'exception </h2>
           Et glace à la vanille de Madagascar</div>
-          <div class="prix">22€</div>
+          <div class="prix">22€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
         <div class= "menu">
           <div class="card-body"><h2>Mousse au chocolat </h2>
           Au piment d'Espelette et à la truffe noire</div>
-          <div class="prix">23€</div>
+          <div class="prix">23€</div> <div class="check"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
         </div>
         <input type="submit" value="Commander" class= "btn" />
+      </div>
       </div>
     </div>
   </div>
@@ -81,10 +87,10 @@
 <footer>
   <h3>ohmyfood</h3>
   <ul>
-    <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-    <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-    <li>Mentions légales</li>
-    <li>Contact</li>   
+    <li class="foot"><a class="foot_link" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+    <li class= "foot"><a class="foot_link" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+    <li><a class="foot_link" href="#">Mentions légales</a></li>
+    <li><a class="foot_link" a href="#">Contact</a></li> 
   </ul>
 </footer>
 </body>

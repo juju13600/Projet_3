@@ -4,11 +4,11 @@
   "description": "Projet 3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/Accueil.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/Accueil2.scss:./public/css/accueil2.css ./sass/Menu.scss:./public/css/menu.css"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/juju13600/Projet_3.git"
+    "url": "git+https://github.com/juju13600/Projet_3.git"
   },
   "author": "Justine",
   "license": "ISC",
