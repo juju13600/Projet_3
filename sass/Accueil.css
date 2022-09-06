@@ -7,11 +7,8 @@ html, body {
 .progress {
   z-index: 1;
   position: absolute;
-}
-
-.progress-loader {
-  width: 200%;
-  margin-left: 80%;
+  margin-left: 35%;
+  margin-top: 20%;
 }
 
 .progress .progress-loader {
@@ -152,12 +149,12 @@ form {
 }
 
 .recherche {
-  width: 80%;
   display: flex;
-  height: 50px;
+  height: 49px;
+  margin-top: 6px;
   background-color: #e2e2e2;
   text-align: center;
-  border: white;
+  border: transparent;
 }
 
 input::-moz-placeholder {
@@ -201,6 +198,10 @@ section {
   box-shadow: 3px 3px 3px 3px #e0e0e0;
   border: white;
   margin-bottom: 20px;
+}
+
+.bouton-présentation:hover {
+  opacity: 0.8;
 }
 
 .bouton-présentation {
@@ -308,40 +309,30 @@ section {
   position: relative;
   -webkit-animation: fadeIn;
           animation: fadeIn;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .fa-heart {
   padding: 0;
   position: absolute;
-  -webkit-animation: fadeIn;
-          animation: fadeIn;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
+  from {
+    Opacity: 0;
   }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
+  to {
+    Opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
+  from {
+    Opacity: 0;
   }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
+  to {
+    Opacity: 1;
   }
 }
 .carte-Restaurant {
@@ -469,15 +460,28 @@ ul li {
   padding-right: 1px;
 }
 
-@media screen and (max-width: 850px) {
-  .progress-loader {
-    width: 80%;
-    margin: 0;
-    padding-left: 10%;
+@media screen and (max-width: 992px) and (min-width: 781px) {
+  .progress {
+    z-index: 1;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20%;
   }
-  .progress-loader i {
-    width: 50%;
-    padding-left: 10%;
+  .recherche {
+    width: 90%;
+    display: flex;
+    height: 50px;
+    background-color: #e2e2e2;
+    text-align: center;
+    border: white;
+  }
+}
+@media screen and (max-width: 780px) {
+  .progress {
+    z-index: 1;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 20%;
   }
   .logo img {
     width: 50%;
@@ -490,6 +494,14 @@ ul li {
     display: flex;
     margin-left: 30%;
     margin-top: 16px;
+  }
+  .recherche {
+    width: 80%;
+    display: flex;
+    height: 50px;
+    background-color: #e2e2e2;
+    text-align: center;
+    border: white;
   }
   .Restaurant {
     display: flex;

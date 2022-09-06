@@ -40,6 +40,7 @@ h5 {
 .titre {
   border-bottom: #99E2D0 2px solid;
   border-width: 2px;
+  text-transform: uppercase;
   width: 45px;
   height: 30px;
   margin-bottom: 15px;
@@ -199,7 +200,7 @@ img {
 .prix {
   display: flex;
   margin-top: 30px;
-  margin-right: 5px;
+  margin-right: 20px;
   font-weight: bold;
 }
 
@@ -276,6 +277,10 @@ img {
   padding-left: 18%;
 }
 
+.btn:hover {
+  opacity: 0.8;
+}
+
 footer {
   background-color: rgb(48, 46, 46);
   color: white;
@@ -313,7 +318,19 @@ li {
   padding-right: 1px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 992px) and (min-width: 781px) {
+  .check {
+    color: white;
+    background-color: aquamarine;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 13%;
+    padding-left: 1%;
+    padding-top: 20px;
+    margin-right: -130px;
+  }
+}
+@media screen and (max-width: 780px) {
   .fa-heart {
     padding-left: 30%;
   }
@@ -337,7 +354,7 @@ li {
   }
   .prix {
     display: flex;
-    margin-right: 5px;
+    margin-right: 20px;
     font-weight: bold;
   }
   .btn {

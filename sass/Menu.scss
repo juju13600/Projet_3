@@ -37,11 +37,11 @@ h5
     font-weight: 50;
     font-size: 16px;
 }
-
 .titre {
 
     border-bottom: #99E2D0 2px solid;
     border-width: 2px;
+    text-transform: uppercase;
     width: 45px;
     height :30px;
     margin-bottom: 15px;
@@ -75,26 +75,27 @@ section
 }
 .backgroundpalette
 {
-background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;
-background-size: contain;
-background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .backgroundnote
 {
-background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) ;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: 0PX -100px; }
+    background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0PX -100px; 
+}
 .backgroundfrancaise
 {
-background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) ;
-background-size: contain;
-background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
 }.backgrounddelice
 {
-background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) ;
-background-size: contain;
-background-repeat: no-repeat;
+    background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .Menu-général
 {
@@ -107,18 +108,18 @@ background-repeat: no-repeat;
     padding-right: 4%;
     margin-top: 56%;
 }
-
 .fa-heart
 {
    padding-left: 70%;
 }
 img
 {
-width: 100%;}
+    width: 100%;
+}
 .carte
 {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
 .menu 
 {
@@ -131,15 +132,14 @@ flex-direction: column;
     line-height:    10px;
     overflow: hidden;
     width: 100%;
-    }
+}
 .entrées
 {
     transform : scale(1);
     animation-name: chargement ;
     animation-duration: 5s;
-
 }
-    @keyframes chargement {
+@keyframes chargement {
     0% {
     opacity: 0;
     }
@@ -149,34 +149,32 @@ flex-direction: column;
 }
 .plats
 {
-transform : scale(1);
-animation-name: chargement ;
-animation-duration: 7s;
-
+    transform : scale(1);
+    animation-name: chargement ;
+    animation-duration: 7s;
 }
 @keyframes chargement {
-0% {
-opacity: 0;
-}
-100% {
-opacity:1;
-} 
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity:1;
+    } 
 }  
 .desserts
-{transform : scale(1);
-animation-name: chargement ;
-animation-duration: 9s;
-
+{
+    transform : scale(1);
+    animation-name: chargement ;
+    animation-duration: 9s;
 }
 @keyframes chargement {
-0% {
-opacity: 0;
-}
-100% {
-opacity:1;
-}
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity:1;
+    }
 } 
-
 .card-body
 {
     width: 97%;
@@ -187,10 +185,11 @@ opacity:1;
 {
     display: flex;
     margin-top: 30px;
-    margin-right: 5px;
+    margin-right: 20px;
     font-weight: bold;
 }
-.check{
+.check
+{
     color: white;
     background-color: aquamarine;
     justify-content: flex-end;
@@ -201,21 +200,20 @@ opacity:1;
     margin-right:-1000px;
 }
 
-.menu:hover .check{
+.menu:hover .check
+{
     transition-duration: 0.5s;
     transition-timing-function: ease;
     cursor: pointer;
     margin-right: 0;
 }
-
 .menu:hover .check i
 {
     animation: rotate;
     animation-duration: 2s;
-  }
+}
 
-  
-  @keyframes rotate {
+@keyframes rotate {
     0% {
       transform: rotate(0deg);
     }
@@ -232,7 +230,7 @@ opacity:1;
 }
 .fa-circle-check i
 {
- padding-top: 40%;
+    padding-top: 40%;
 }
 
 .link,.link:visited
@@ -254,6 +252,10 @@ opacity:1;
     box-shadow:  3px 3px 3px 3px #e0e0e0;
     border: white;
     padding-left: 18%;
+}
+.btn:hover
+{
+    opacity: 0.8;
 }
 
 footer
@@ -294,7 +296,19 @@ li
 {
     padding-right: 1px;
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width : 992px) and (min-width: 781px){
+.check{
+    color: white;
+    background-color: aquamarine;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 13%;
+    padding-left: 1%;
+    padding-top: 20px;
+    margin-right:-130px;
+    }    
+}
+@media screen and (max-width: 780px){
 .fa-heart
 {
    padding-left: 30%;
@@ -322,7 +336,7 @@ li
 .prix
 {
     display: flex;
-    margin-right: 5px;
+    margin-right: 20px;
     font-weight: bold;
 }
 .btn
