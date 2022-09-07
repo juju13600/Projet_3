@@ -4,7 +4,7 @@
   "description": "Projet 3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/Accueil2.scss:./public/css/accueil2.css ./sass/Menu.scss:./public/css/menu.css"
+    "sass": "sass --watch ./sass/Accueil.scss:./sass/Accueil.css ./sass/Menu.scss:./sass/Menu.css"
   },
   "repository": {
     "type": "git",

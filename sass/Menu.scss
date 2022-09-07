@@ -16,7 +16,7 @@ h1
 }
 h2
 {  
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 900;
 }
 h3
@@ -178,8 +178,8 @@ img
 .card-body
 {
     width: 97%;
-    padding-top: 1%;
     padding-left: 1%;
+    font-size: 14px;
 }
 .prix
 {
@@ -194,9 +194,9 @@ img
     background-color: aquamarine;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 13%;
-    padding-left: 1%;
-    padding-top: 20px;
+    width: 45px;
+    padding-left: 20px;
+    padding-top: 25px;
     margin-right:-1000px;
 }
 
@@ -228,11 +228,6 @@ img
     background-color: white;
     border: white;
 }
-.fa-circle-check i
-{
-    padding-top: 40%;
-}
-
 .link,.link:visited
 {
     text-decoration: none;
@@ -297,16 +292,22 @@ li
     padding-right: 1px;
 }
 @media screen and (max-width : 992px) and (min-width: 781px){
+.card-body
+{
+    width: 95%;
+    padding-left: 1%;
+    font-size: 14px;
+}
 .check{
     color: white;
     background-color: aquamarine;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 13%;
-    padding-left: 1%;
-    padding-top: 20px;
+    width: 45px;
+    padding-left: 20px;
+    padding-top: 25px;
     margin-right:-130px;
-    }    
+    }
 }
 @media screen and (max-width: 780px){
 .fa-heart
@@ -324,14 +325,10 @@ li
     background-color: aquamarine;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 13%;
-    padding-top: 6%;
-    padding-left: 1%;
+    width: 45px;
+    padding-top: 25px;
+    padding-left: 15px;
     margin-right:-1000px;
-}
-.fa-circle-check 
-{
-    padding: 10px;
 }
 .prix
 {

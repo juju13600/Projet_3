@@ -13,21 +13,10 @@ html, body {
 
 .progress .progress-loader {
   opacity: 0;
-  -webkit-animation: load;
-          animation: load;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  animation: load;
+  animation-duration: 8s;
   font-size: 45px;
   font-family: "Shrikhand";
-}
-
-@-webkit-keyframes load {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 @keyframes load {
@@ -40,17 +29,7 @@ html, body {
 }
 header, section, footer {
   z-index: 2;
-  -webkit-animation: bar 10s;
-          animation: bar 10s;
-}
-
-@-webkit-keyframes bar {
-  0% {
-    transform: translateX(-9999px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  animation: bar 10s;
 }
 
 @keyframes bar {
@@ -63,21 +42,9 @@ header, section, footer {
 }
 .progress .progress-loader i {
   margin: 20%;
-  -webkit-animation: rotate;
-          animation: rotate;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes rotate {
@@ -155,20 +122,6 @@ form {
   background-color: #e2e2e2;
   text-align: center;
   border: transparent;
-}
-
-input::-moz-placeholder {
-  display: flex;
-  font-size: 16px;
-  font-weight: 900;
-  color: rgb(77, 77, 77);
-}
-
-input:-ms-input-placeholder {
-  display: flex;
-  font-size: 16px;
-  font-weight: 900;
-  color: rgb(77, 77, 77);
 }
 
 input::placeholder {
@@ -298,33 +251,26 @@ section {
 
 .fas, .far {
   margin-top: 20px;
+  background-clip: content-box;
+  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
 .fas {
-  color: transparent;
+  opacity: 0;
 }
 
 .fas:hover {
-  color: #9356DC;
+  opacity: 1;
+  background-clip: content-box;
+  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
   position: relative;
-  -webkit-animation: fadeIn;
-          animation: fadeIn;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 
 .fa-heart {
   padding: 0;
   position: absolute;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    Opacity: 0;
-  }
-  to {
-    Opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
@@ -369,12 +315,10 @@ section {
 
 .card-image img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px 12px 0px 0px;
   height: 180px;
-  -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
 }
 
 .New {
@@ -397,12 +341,10 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px 12px 0px 0px;
   height: 180px;
-  -o-object-position: 80% 40%;
-     object-position: 80% 40%;
+  object-position: 80% 40%;
   width: 250px;
 }
 
@@ -480,7 +422,7 @@ ul li {
   .progress {
     z-index: 1;
     position: absolute;
-    margin-left: 5%;
+    margin-left: 30px;
     margin-top: 20%;
   }
   .logo img {
@@ -535,11 +477,11 @@ ul li {
     display: flex;
     flex-direction: column;
     width: 200%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 12px 12px 0px 0px;
     height: 180px;
-    -o-object-position: 80% 40%;
-       object-position: 80% 40%;
+    object-position: 80% 40%;
   }
-}/*# sourceMappingURL=Accueil.css.map */
+}
+
+/*# sourceMappingURL=Accueil.css.map */

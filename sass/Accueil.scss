@@ -238,17 +238,21 @@ section
 .fas, .far
 {
     margin-top: 20px;
+    background-clip: content-box;
+    background-color:linear-gradient( to bottom right, #FF79DA,#9356DC);
 }
 .fas
 {
-    color:transparent;
+opacity: 0;
 }
 .fas:hover
 {
-    color: #9356DC;
+    opacity: 1;
+    background-clip: content-box;
+    background-color:linear-gradient( to bottom right, #FF79DA,#9356DC);
     position: relative;
     animation: fadeIn;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 .fa-heart
@@ -407,7 +411,7 @@ ul
 .progress {
     z-index: 1;
     position: absolute;
-    margin-left: 5%;
+    margin-left: 30px;
     margin-top: 20%;
 }
 .logo img

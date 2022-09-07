@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -136,19 +136,8 @@ img {
 
 .entrées {
   transform: scale(1);
-  -webkit-animation-name: chargement;
-          animation-name: chargement;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-@-webkit-keyframes chargement {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation-name: chargement;
+  animation-duration: 5s;
 }
 
 @keyframes chargement {
@@ -161,10 +150,8 @@ img {
 }
 .plats {
   transform: scale(1);
-  -webkit-animation-name: chargement;
-          animation-name: chargement;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  animation-name: chargement;
+  animation-duration: 7s;
 }
 
 @keyframes chargement {
@@ -177,10 +164,8 @@ img {
 }
 .desserts {
   transform: scale(1);
-  -webkit-animation-name: chargement;
-          animation-name: chargement;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
+  animation-name: chargement;
+  animation-duration: 9s;
 }
 
 @keyframes chargement {
@@ -193,8 +178,8 @@ img {
 }
 .card-body {
   width: 97%;
-  padding-top: 1%;
   padding-left: 1%;
+  font-size: 14px;
 }
 
 .prix {
@@ -209,9 +194,9 @@ img {
   background-color: aquamarine;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 13%;
-  padding-left: 1%;
-  padding-top: 20px;
+  width: 45px;
+  padding-left: 20px;
+  padding-top: 25px;
   margin-right: -1000px;
 }
 
@@ -223,19 +208,8 @@ img {
 }
 
 .menu:hover .check i {
-  -webkit-animation: rotate;
-          animation: rotate;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: rotate;
+  animation-duration: 2s;
 }
 
 @keyframes rotate {
@@ -251,10 +225,6 @@ img {
   flex-direction: row;
   background-color: white;
   border: white;
-}
-
-.fa-circle-check i {
-  padding-top: 40%;
 }
 
 .link, .link:visited {
@@ -319,14 +289,19 @@ li {
 }
 
 @media screen and (max-width: 992px) and (min-width: 781px) {
+  .card-body {
+    width: 95%;
+    padding-left: 1%;
+    font-size: 14px;
+  }
   .check {
     color: white;
     background-color: aquamarine;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 13%;
-    padding-left: 1%;
-    padding-top: 20px;
+    width: 45px;
+    padding-left: 20px;
+    padding-top: 25px;
     margin-right: -130px;
   }
 }
@@ -344,13 +319,10 @@ li {
     background-color: aquamarine;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 13%;
-    padding-top: 6%;
-    padding-left: 1%;
+    width: 45px;
+    padding-top: 25px;
+    padding-left: 15px;
     margin-right: -1000px;
-  }
-  .fa-circle-check {
-    padding: 10px;
   }
   .prix {
     display: flex;
@@ -365,4 +337,6 @@ li {
     border: white;
     padding-left: 12%;
   }
-}/*# sourceMappingURL=Menu.css.map */
+}
+
+/*# sourceMappingURL=Menu.css.map */
