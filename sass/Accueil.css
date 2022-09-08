@@ -251,18 +251,21 @@ section {
 
 .fas, .far {
   margin-top: 20px;
-  background-clip: content-box;
-  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  height: 50px;
 }
 
 .fas {
   opacity: 0;
+  color: white;
 }
 
 .fas:hover {
   opacity: 1;
-  background-clip: content-box;
-  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: transparent;
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   animation: fadeIn;
   animation-duration: 2s;
@@ -275,10 +278,10 @@ section {
 
 @keyframes fadeIn {
   from {
-    Opacity: 0;
+    opacity: 0;
   }
   to {
-    Opacity: 1;
+    opacity: 1;
   }
 }
 .carte-Restaurant {
