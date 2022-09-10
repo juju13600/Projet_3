@@ -74,26 +74,26 @@ section {
 }
 
 .backgroundpalette {
-  background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .backgroundnote {
-  background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0PX -100px;
 }
 
 .backgroundfrancaise {
-  background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .backgrounddelice {
-  background-image: url(file:///C:/Users/justi/Documents/Projet3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -109,10 +109,53 @@ section {
   margin-top: 56%;
 }
 
-.fa-heart {
-  padding-left: 70%;
+.titre-menu {
+  display: flex;
+  font-family: "Shrikhand";
+  font-weight: 100;
+  font-size: 22px;
+  margin-top: 20px;
 }
 
+.heart {
+  display: flex;
+  height: 50px;
+  margin-left: 65%;
+}
+
+.fas, .far {
+  height: 50px;
+  font-size: 21px;
+}
+
+.fas {
+  opacity: 0;
+  color: white;
+}
+
+.fas:hover {
+  opacity: 1;
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.fa-heart {
+  position: absolute;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 img {
   width: 100%;
 }
@@ -306,8 +349,11 @@ li {
   }
 }
 @media screen and (max-width: 780px) {
-  .fa-heart {
-    padding-left: 30%;
+  .heart {
+    display: flex;
+    height: 50px;
+    margin-left: 30%;
+    margin-top: 5px;
   }
   .card-body {
     width: 93%;

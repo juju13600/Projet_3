@@ -237,23 +237,23 @@ section
 }
 .fas, .far
 {
-    margin-top: 20px;
+    margin-top: 15px;
     height: 50px;
+    font-size: 21px;
 }
 .fas
 {
     opacity: 0;
     color:white;
 }
-.fas:hover 
+.fas:hover
 {
     opacity: 1;
-    color: transparent;
     background: linear-gradient(#ff79da, #9356dc);
     background-clip: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: relative;
+    position:relative;
     animation: fadeIn;
     animation-duration: 2s;
 }
@@ -347,7 +347,7 @@ section
 .card-title
 {
     line-height: 5px;
-    width: 90%;
+    width: 85%;
 }
 .link,.link:visited
 {
