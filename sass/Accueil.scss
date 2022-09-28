@@ -3,7 +3,15 @@ html,body
     margin:0;
     padding:0;
 }
-
+.fa-spinner,.fa-store{
+    color:#9356DC ;
+}
+.fa-location-dot{
+    color:rgb(77, 77, 77);
+}
+.fa-mobile-screen-button,.fa-list{
+    color:grey;
+}
 .progress {
     z-index: 1;
     position: absolute;
@@ -165,6 +173,7 @@ section
 .bouton-présentation:hover
 {
     opacity: 0.8;
+    box-shadow:  3px 3px 3px 3px #acabab;
 }
 .bouton-présentation
 {
@@ -249,7 +258,7 @@ section
 .fas:hover
 {
     opacity: 1;
-    background: linear-gradient(#ff79da, #9356dc);
+    background: linear-gradient(to right, #9356dc,#ff79da);
     background-clip: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -394,86 +403,44 @@ ul
 }
 @media screen and (max-width : 992px) and (min-width: 781px){
 .progress {
-    z-index: 1;
-    position: absolute;
     margin-left: 30%;
-    margin-top: 20%;
     }
 .recherche
 {
     width: 90%;
-    display: flex;
     height: 50px;
-    background-color: #e2e2e2;
-    text-align: center;
-    border: white;
 }
 }
 @media screen and (max-width: 780px){
 .progress {
-    z-index: 1;
-    position: absolute;
     margin-left: 30px;
-    margin-top: 20%;
 }
 .logo img
 {
     width: 50%;
-    display: block;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .fa-location-dot
 {
-    display: flex;
     margin-left: 30%;
-    margin-top: 16px;
 }
 .recherche
 {
     width: 80%;
-    display: flex;
     height: 50px;
-    background-color: #e2e2e2;
-    text-align: center;
-    border: white;
-}
-.Restaurant
-{
-    @include colonne;
-    background-color: #F2F2F2;
-    width: auto;
-    height: 100%;
-    padding: 7%;
 }
 .carte-Restaurant
 {
     @include colonne;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    width: auto;
 }
 .cadre-photo-Restaurant
 {
     @include colonne;
-    box-shadow: 3px 3px 3px 3px #F2F2F2;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    font-size: 12px;
-    height: 250px;
     width: 100%;
     margin-left: 0;
 }
 .Charonne img
 {
-    @include colonne;
     width: 200%;
     object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
-    height: 180px;
-    object-position: 80% 40%;
 }
 }

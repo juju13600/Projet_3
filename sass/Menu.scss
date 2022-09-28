@@ -6,7 +6,7 @@ html, body
 *
 {
     font-family: 'Roboto';
-    font-size: 12px;
+    font-size: 16px;
 }
 h1
 {
@@ -18,6 +18,11 @@ h2
 {  
     font-size: 16px;
     font-weight: 900;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    height: 15px;
+    padding-top: 5px;
 }
 h3
 {
@@ -134,7 +139,7 @@ section
 .fas:hover
 {
     opacity: 1;
-    background: linear-gradient(#ff79da, #9356dc);
+    background: linear-gradient(to right, #9356dc,#ff79da);
     background-clip: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -170,7 +175,7 @@ img
     flex-wrap: nowrap;
     background-color: white;
     margin-bottom: 20px;
-    height: 60px;
+    height: 70px;
     border-radius: 10px 10px 10px 10px;
     line-height:    10px;
     overflow: hidden;
@@ -221,8 +226,12 @@ img
 .card-body
 {
     width: 97%;
+    height: 80px;
     padding-left: 1%;
     font-size: 14px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
 }
 .prix
 {
@@ -230,11 +239,12 @@ img
     margin-top: 30px;
     margin-right: 20px;
     font-weight: bold;
+    font-size: 12px;
 }
 .check
 {
     color: white;
-    background-color: aquamarine;
+    background-color: #99E2D0;
     justify-content: flex-end;
     align-items: flex-end;
     width: 45px;
@@ -245,7 +255,7 @@ img
 
 .menu:hover .check
 {
-    transition-duration: 0.5s;
+    transition-duration: 1s;
     transition-timing-function: ease;
     cursor: pointer;
     margin-right: 0;
@@ -264,13 +274,6 @@ img
       transform: rotate(360deg);
     }
   }
-.btn
-{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border: white;
-}
 .link,.link:visited
 {
     text-decoration: none;
@@ -284,16 +287,17 @@ img
     margin-top: 20px;
     margin-left: 25%;
     margin-bottom: 50px;
-    padding-left: 40px;
     background: linear-gradient( to bottom right, #FF79DA,#9356DC);
     border-radius: 40px;
     box-shadow:  3px 3px 3px 3px #e0e0e0;
     border: white;
-    padding-left: 18%;
+    text-align: center;
+    font-size: 12px;
 }
 .btn:hover
 {
     opacity: 0.8;
+    box-shadow:  3px 3px 3px 3px #acabab;
 }
 
 footer
@@ -338,56 +342,30 @@ li
 .card-body
 {
     width: 95%;
-    padding-left: 1%;
-    font-size: 14px;
 }
-.check{
-    color: white;
-    background-color: aquamarine;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 45px;
-    padding-left: 20px;
-    padding-top: 25px;
+.check
+{
     margin-right:-130px;
-    }
+}
 }
 @media screen and (max-width: 780px){
 .heart {
-    display: flex;
-    height: 50px;
     margin-left: 30%;
     margin-top: 5px;
 }
 .card-body
 {
     width: 93%;
-    padding-top: 1%;
     padding-left: 1%;
 }
-.check{
-    color: white;
-    background-color: aquamarine;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 45px;
+.check
+{
     padding-top: 25px;
     padding-left: 15px;
     margin-right:-1000px;
 }
 .prix
 {
-    display: flex;
     margin-right: 20px;
-    font-weight: bold;
-}
-.btn
-{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border: white;
-    padding-left: 12%;
 }
 }
